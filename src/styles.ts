@@ -25,7 +25,7 @@ export const globalStyles = `
   }
 
   /* ── NAV ── */
-  nav {
+  .site-nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     background: rgba(13,15,20,0.85);
     backdrop-filter: blur(12px);

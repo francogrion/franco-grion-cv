@@ -1,6 +1,6 @@
 export function Nav(): string {
   return `
-    <nav>
+    <header class="site-nav">
       <div class="nav-logo">franco.grion</div>
       <div class="nav-links">
         <a href="#stack">Stack</a>
@@ -8,6 +8,6 @@ export function Nav(): string {
         <a href="#extras">More</a>
         <a href="#contact">Contact</a>
       </div>
-    </nav>
+    </header>
   `;
 }
