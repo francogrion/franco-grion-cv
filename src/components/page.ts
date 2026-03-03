@@ -1,4 +1,6 @@
 import { globalStyles } from "../styles";
+import { Footer } from "./Footer";
+import { Nav } from "./Nav";
 
 export function renderPage(): string {
   return `<!DOCTYPE html>
@@ -11,10 +13,8 @@ export function renderPage(): string {
   <style>${globalStyles}</style>
 </head>
 <body>
-    <main>
-        <h1>Franco Grion</h1>
-        <h2>Backend Software Engineer</h2>
-    </main>
+  ${Nav()}
+  ${Footer()}
 </body>
 </html>`;
 }
