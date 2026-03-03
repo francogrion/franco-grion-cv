@@ -1,6 +1,11 @@
 import { globalStyles } from "../styles";
-import { Footer } from "./Footer";
-import { Nav } from "./Nav";
+import { Nav }        from "./Nav";
+import { Hero }       from "./Hero";
+import { Stack }      from "./Stack";
+import { Experience } from "./Experience";
+import { Extras }     from "./Extras";
+import { Contact }    from "./Contact";
+import { Footer }     from "./Footer";
 
 export function renderPage(): string {
   return `<!DOCTYPE html>
@@ -14,6 +19,11 @@ export function renderPage(): string {
 </head>
 <body>
   ${Nav()}
+  ${Hero()}
+  ${Stack()}
+  ${Experience()}
+  ${Extras()}
+  ${Contact()}
   ${Footer()}
 </body>
 </html>`;

@@ -198,7 +198,7 @@ export const globalStyles = `
   .card.rust-card .card-icon { color: var(--rust); }
 
   /* ── CONTACT ── */
-  #contact { background: var(--bg2); border-top: 1px solid var(--border); }
+  #contact { background: var(--bg); border-top: 1px solid var(--border); }
   .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
   @media(max-width:600px) { .contact-grid { grid-template-columns: 1fr; } }
   .contact-card {
