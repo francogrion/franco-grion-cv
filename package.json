@@ -1,5 +1,10 @@
 {
   "name": "franco-grion-cv",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run src/server.ts",
+    "build": "bun run src/build.ts"
+  },
   "module": "index.ts",
   "type": "module",
   "private": true,
