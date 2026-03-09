@@ -33,10 +33,12 @@ export const globalStyles = `
     padding: 0 2rem;
     display: flex; align-items: center; justify-content: space-between;
     height: 58px;
+    /* removed flex-wrap */
   }
   .nav-logo {
     font-family: 'JetBrains Mono', monospace;
     font-size: 14px; color: var(--accent); font-weight: 500;
+    text-decoration: none;
   }
   .nav-links { display: flex; gap: 1.8rem; }
   .nav-links a {
@@ -45,6 +47,42 @@ export const globalStyles = `
     transition: color .2s;
   }
   .nav-links a:hover { color: var(--text); }
+
+  /* ── NAV TOGGLE (mobile only) ── */
+  .nav-toggle {
+    display: none;
+    background: none; border: none;
+    color: var(--muted); font-size: 1.3rem;
+    cursor: pointer; transition: color .2s;
+  }
+  .nav-toggle:hover { color: var(--text); }
+
+  @media (max-width: 640px) {
+    .nav-toggle {
+      display: block;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 58px; left: 0; right: 0;
+      background: rgba(13,15,20,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.5rem 2rem 1rem;
+      gap: 0;
+    }
+
+    .nav-links a {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-nav.open .nav-links {
+      display: flex;
+    }
+  }
 
   /* ── HERO ── */
   .hero {

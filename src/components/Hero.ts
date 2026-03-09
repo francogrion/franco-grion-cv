@@ -1,6 +1,6 @@
 export function Hero(): string {
   return `
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="hero-inner">
         <div class="hero-badge"><span>●</span> Open to new opportunities</div>
         <h1><em>Franco</em> <em>Grion</em><br>Backend Engineer.</h1>
@@ -12,7 +12,7 @@ export function Hero(): string {
           <a href="#experience" class="btn btn-primary">View Experience</a>
           <a href="#contact" class="btn btn-outline">Get in touch</a>
         </div>
-        <div class="hero-location">📍 Begues, Barcelona, Spain</div>
+        <div class="hero-location">📍 Barcelona, Spain</div>
       </div>
     </section>
   `;
