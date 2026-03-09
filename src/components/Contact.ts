@@ -7,10 +7,10 @@ interface ContactItem {
 }
 
 const items: ContactItem[] = [
-  { icon: "✉️", label: "Email",    value: "franco.grion@gmail.com",       href: "mailto:franco.grion@gmail.com" },
+  { icon: "✉️", label: "Email",    value: "contact@francogrion.dev",       href: "mailto:contact@francogrion.dev" },
   { icon: "📞", label: "Phone",    value: "+34 677 940 475",               href: "tel:+34677940475" },
   { icon: "💼", label: "LinkedIn", value: "franco-emanuel-grion",          href: "https://linkedin.com/in/franco-emanuel-grion", blank: true },
-  { icon: "📍", label: "Location", value: "Begues, Barcelona, Spain" },
+  { icon: "📍", label: "Location", value: "Barcelona, Spain" },
 ];
 
 function renderItem(item: ContactItem): string {

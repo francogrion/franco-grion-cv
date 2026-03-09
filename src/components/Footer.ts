@@ -21,7 +21,7 @@ export function Footer(): string {
         <div class="footer-bottom">
           <div class="footer-copy">© 2026 Franco Emanuel Grion — All rights reserved</div>
           <div class="footer-social">
-            <a href="mailto:franco.grion@gmail.com" class="footer-social-link" title="Email">✉️</a>
+            <a href="mailto:contact@francogrion.dev" class="footer-social-link" title="Email">✉️</a>
             <a href="tel:+34677940475" class="footer-social-link" title="Phone">📞</a>
             <a href="https://linkedin.com/in/franco-emanuel-grion" target="_blank" class="footer-social-link" title="LinkedIn">💼</a>
           </div>
